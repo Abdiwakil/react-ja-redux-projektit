@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './components/Form';
+import View from './components/View';
+import React, { useState } from 'react';
 
-function App() {
+
+const App = () => {
+  const[inputs, setInputs] = useState({
+    Firstname: "",
+    Lastname: "",
+    phone: "",
+    message: ""
+  });
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Form functions={[inputs, setInputs]}/>
+      <View inputs={inputs}/>
     </div>
   );
 }
-
+ 
 export default App;

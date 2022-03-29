@@ -1,0 +1,17 @@
+.mb-3{
+    
+    
+    padding: 5px;
+    
+}
+.form{
+    border-style:ridge;
+    width: 30% ;
+    background-color: #3366CC;
+    color: #FFFFFF;
+}
+
+.labels{
+    width: 100px;
+    display: inline-block;
+}

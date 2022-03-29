@@ -1,0 +1,13 @@
+.view{
+    background-color: #FFFFFF;
+    border-style: ridge;
+    border-color: #3366CC;
+    width: 30%;
+}
+.label{
+    width: 100px;
+    display: flex;
+}
+.input{
+    display: inline-block;
+}
