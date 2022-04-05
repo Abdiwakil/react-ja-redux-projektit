@@ -9,7 +9,6 @@ const View = (props) => {
           <p>First name: {inputs.Firstname}</p>
           <p>Last name: {inputs.Lastname}</p>
           <p>Phone: {inputs.phone}</p>
-
           <p>Message: {inputs.message}</p>
       </div>
       </> 

@@ -9,9 +9,15 @@ function App() {
     { name: 'Ursula', species: 'cat' },
     { name: 'Jimmy', species: 'fish' }
   ]
-  let otherAnimals = animals.filter(function (animal) {
+  /*let otherAnimals = animals.filter(function (animal) {
     return animal.species !== 'dog'
-  })
+  })*/
+  let otherAnimals=[];
+  for (let i = 0; i < animals.length; i++) {
+    if (animals[i].species !== 'dog') {
+      otherAnimals.push(animals[i])
+    }
+  }
 
   console.log(animals);
   console.log(otherAnimals)
