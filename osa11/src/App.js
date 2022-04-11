@@ -1,50 +1,32 @@
 import './App.css';
 
 function App() {
-  let animals = [
-    { name: 'Fluffykins', species: 'rabbit' },
-    { name: 'Caro', species: 'dog' },
-    { name: 'Hamilton', species: 'dog' },
-    { name: 'Harold', species: 'fish' },
-    { name: 'Ursula', species: 'cat' },
-    { name: 'Jimmy', species: 'fish' }
+  const orders = [
+    { product: "apple", amount: 250 },
+    { product: "orange", amount: 400 },
+    { product: "banana", amount: 100 },
+    { product: "mango", amount: 325 }
   ]
-  /*let otherAnimals = animals.filter(function (animal) {
-    return animal.species !== 'dog'
-  })*/
-
-  console.log(animals);
-
-  const animal = animals.map(
+  let summa= 0;
+  for (let i = 0; i < orders.length; i++){
+    summa+=orders[i].amount
+  }
+  const tulos = orders.map(
     (x) => {
       return (
         <p>
-          name: "{x.name}", species: "{x.species}"
+          name: "{x.product}", species: "{x.amount}"
         </p>
       )
     }
   )
-  // const names = []
-  // for (let i = 0; i < animals.length; i++) {
-  //   names.push(animals[i].name)
-  // }
-  const name = animals.map(
-    (names) => {
-      return (
-        <p>
-          name: "{names.name}"
-        </p>
-      )
-    }
-  )
-
-
   return (
     <div>
       <h2>List of animals</h2>
-      <> {animal}</> <br></br>
-      <h2>The names</h2>
-      <>{name}</>
+      <> {tulos}</> <br></br>
+      <h2>Amount total</h2>
+      {summa}
+      <></>
     </div>
   );
 }
