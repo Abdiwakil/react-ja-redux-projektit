@@ -7,10 +7,14 @@ function App() {
     { product: "banana", amount: 100 },
     { product: "mango", amount: 325 }
   ]
-  let summa= 0;
-  for (let i = 0; i < orders.length; i++){
-    summa+=orders[i].amount
-  }
+  // let summa= 0;
+  // for (let i = 0; i < orders.length; i++){
+  //   summa+=orders[i].amount
+  // }
+
+  let summa = orders.reduce((sum, x)=>
+    sum += x.amount,0
+  )
   const tulos = orders.map(
     (x) => {
       return (
