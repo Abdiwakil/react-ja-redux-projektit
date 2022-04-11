@@ -24,15 +24,15 @@ function App() {
       )
     }
   )
-  const names = []
-  for (let i = 0; i < animals.length; i++) {
-    names.push(animals[i].name)
-  }
-  const name = names.map(
+  // const names = []
+  // for (let i = 0; i < animals.length; i++) {
+  //   names.push(animals[i].name)
+  // }
+  const name = animals.map(
     (names) => {
       return (
         <p>
-          name: "{names}"
+          name: "{names.name}"
         </p>
       )
     }
