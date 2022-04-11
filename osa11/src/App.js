@@ -12,15 +12,9 @@ function App() {
   /*let otherAnimals = animals.filter(function (animal) {
     return animal.species !== 'dog'
   })*/
-  let otherAnimals=[];
-  for (let i = 0; i < animals.length; i++) {
-    if (animals[i].species !== 'dog') {
-      otherAnimals.push(animals[i])
-    }
-  }
 
   console.log(animals);
-  console.log(otherAnimals)
+
   const animal = animals.map(
     (x) => {
       return (
@@ -30,29 +24,27 @@ function App() {
       )
     }
   )
-
-  const dog = otherAnimals.map(
-    (x) => {
+  const names = []
+  for (let i = 0; i < animals.length; i++) {
+    names.push(animals[i].name)
+  }
+  const name = names.map(
+    (names) => {
       return (
         <p>
-
-          name: "{x.name}", species: "{x.species}"
+          name: "{names}"
         </p>
       )
     }
   )
 
 
-  /* for (let i = 0; i < animals.length; i++){
-     if (animals[i].species === 'dog')
-     otherAnimals.push(animals[i])
-   }*/
   return (
     <div>
       <h2>List of animals</h2>
       <> {animal}</> <br></br>
-      <h2>Dogless list</h2>
-      <>{dog}</>
+      <h2>The names</h2>
+      <>{name}</>
     </div>
   );
 }
