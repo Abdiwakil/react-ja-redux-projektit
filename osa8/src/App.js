@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Button from './Button';
-import Score from './Score';
-import Gameover from './Gameover';
+import {Button ,Gameover ,Score} from './Apuvalineet';
+
 
 function getRandomInt(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;

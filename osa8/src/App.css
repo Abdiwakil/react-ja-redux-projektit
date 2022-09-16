@@ -14,11 +14,11 @@ body {
   width: 100px;
   height: 50px;
   border-radius: 15px;
-  background-color: #0edd98;
+  background-color: #ffffff;
   box-shadow: 5px 10px 15px darkgray;
   margin: 100px auto;
   display: flex;
   justify-content: center;
   font-size: 18px;
-  color: white;
+  color: rgb(19, 15, 42);
 }

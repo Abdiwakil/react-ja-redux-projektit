@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot-testi testataan DomElementit 1`] = `
+Array [
+  <h1
+    data-testid="laskuri"
+  >
+    0
+  </h1>,
+  <button
+    data-testid="nappi-ylos"
+    onClick={[Function]}
+  >
+    Ylös
+  </button>,
+  <button
+    data-testid="nappi-alas"
+    disabled={true}
+    onClick={[Function]}
+  >
+    Alas
+  </button>,
+]
+`;
