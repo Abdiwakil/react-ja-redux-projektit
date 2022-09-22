@@ -1,6 +1,7 @@
 import './App.css';
 import Syote from './Syote';
 import React, { useState } from 'react';
+import Laske from './Laske';
 
 function App() {
   const[inputs] = useState({a : 0, b:0});
@@ -16,6 +17,7 @@ function App() {
 
         <div className="App">
         <Syote functions={[inputs]}/>
+        <Laske inputs={inputs}/>
         </div>
     </div>
       
