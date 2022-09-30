@@ -1,0 +1,21 @@
+.App{
+  display: flex;
+  text-align: center;
+  font-family:sans-serif;
+}
+.box{
+  width: 150px;
+  height: 150px;
+  border: solid 1px gray;
+  background-color: rgb(235, 120, 27);
+  color: rgb(255, 255, 255);
+  line-height: 0em;
+  margin: 5px;
+}
+p{
+  color: rgb(221, 214, 214);
+}
+.sisalto{
+  position: relative;
+  top: 30%;
+}
