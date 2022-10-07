@@ -1,12 +1,11 @@
 import './App.css';
-import Syote from './Syote';
-import React, { useState } from 'react';
-import Laske from './Laske';
-
+import Laske from './components/Laske';
 function App() {
-  const[inputs] = useState({a : 0, b:0});
+  let luvut = {
+    eka : 252,
+    toka: 105,
+  }
   return (
-    
     <div className="App">
         <h2>1. Mitä tarkoittaa algoritmi?</h2>
         <p>- Algoritmi on yksityiskohtainen kuvaus tai ohje, jota seuraamalla tehtävä, prosessi tai ongelmanratkaisu suoritetaan.</p>
@@ -16,11 +15,10 @@ function App() {
         <p>- Keino, jonka avulla voidaan selvittää kahden kokonaisluvun suurin yhteinen tekijä </p>
 
         <div className="App">
-        <Syote functions={[inputs]}/>
-        <Laske inputs={inputs}/>
+        <Laske eka={luvut.eka} toka={luvut.toka}/>
         </div>
-    </div>
-      
+   
+       </div>
   );
 }
 
